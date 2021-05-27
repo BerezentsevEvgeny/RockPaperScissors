@@ -60,17 +60,25 @@
 		3E6988A6255EEEDD00A5407D /* RPS */ = {
 			isa = PBXGroup;
 			children = (
-				3E6988A7255EEEDD00A5407D /* AppDelegate.swift */,
-				3E6988A9255EEEDD00A5407D /* SceneDelegate.swift */,
+				638A2EBF265FF088008B7923 /* Support */,
 				3E6988AB255EEEDD00A5407D /* ViewController.swift */,
-				3E6988AD255EEEDD00A5407D /* Main.storyboard */,
 				3E6988BC255EEF9800A5407D /* Sign.swift */,
 				3E6988BF255EF17C00A5407D /* GameState.swift */,
+				3E6988AD255EEEDD00A5407D /* Main.storyboard */,
 				3E6988B0255EEEDE00A5407D /* Assets.xcassets */,
 				3E6988B2255EEEDE00A5407D /* LaunchScreen.storyboard */,
 				3E6988B5255EEEDE00A5407D /* Info.plist */,
 			);
 			path = RPS;
+			sourceTree = "<group>";
+		};
+		638A2EBF265FF088008B7923 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3E6988A7255EEEDD00A5407D /* AppDelegate.swift */,
+				3E6988A9255EEEDD00A5407D /* SceneDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
