@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Варианты состояния игры
 enum GameState {
     case start, win, lose, draw
 }

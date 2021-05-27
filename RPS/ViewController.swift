@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
- // Outlets
     @IBOutlet weak var computerLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var rockButton: UIButton!
@@ -23,6 +22,7 @@ class ViewController: UIViewController {
         resetBoard()
     }
     
+    // Сброс
     func resetBoard() {
         computerLabel.text = "🤖"
         statusLabel.text = "Rock, Paper, Scissors?"
@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         playAgainButton.isHidden = true
     }
     
+    // Логика
     func play(_ playerTurn: Sign) {
         rockButton.isEnabled = false
         paperButton.isEnabled = false
@@ -73,7 +74,8 @@ class ViewController: UIViewController {
         playAgainButton.isHidden = false
     }
     
-    // Actions
+    // MARK: - Действия
+    
     @IBAction func playAgainSelected(_ sender: UIButton) {
         resetBoard()
     }
