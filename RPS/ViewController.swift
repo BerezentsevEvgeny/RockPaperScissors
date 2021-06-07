@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         resetBoard()
     }
     
-    // Сброс
     func resetBoard() {
         computerLabel.text = "🤖"
         statusLabel.text = "Rock, Paper, Scissors?"
@@ -34,7 +33,6 @@ class ViewController: UIViewController {
         playAgainButton.isHidden = true
     }
     
-    // Логика
     func play(_ playerTurn: Sign) {
         rockButton.isEnabled = false
         paperButton.isEnabled = false
@@ -73,7 +71,7 @@ class ViewController: UIViewController {
         playAgainButton.isHidden = false
     }
     
-    // MARK: - Действия
+    // MARK: - Actions
     
     @IBAction func playAgainSelected(_ sender: UIButton) {
         resetBoard()

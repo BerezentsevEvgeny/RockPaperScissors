@@ -10,7 +10,7 @@ import GameplayKit
 
 let randomChoice = GKRandomDistribution(lowestValue: 0,
                                         highestValue: 2)
-// Рандомизация символов
+
 func randomSign() -> Sign {
     let sign = randomChoice.nextInt()
     if sign == 0 {
@@ -22,7 +22,7 @@ func randomSign() -> Sign {
     }
 }
 
-// Модель символов
+
 enum Sign {
     case rock, paper, scissors
     
@@ -37,7 +37,7 @@ enum Sign {
         }
     }
     
-    // Сделать ход
+
     func takeTurn(_ opponent: Sign) -> GameState {
         switch self {
         case .rock:
